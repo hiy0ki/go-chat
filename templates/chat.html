@@ -35,7 +35,7 @@
             if (!window["WebSocket"]) {
               alert("this browser dosent use websocket");
             } else {
-              socket = new WebSocket("ws://localhost:8088/room");
+              socket = new WebSocket("ws://{{.Host}}/room");
               socket.onclose = function(e) {
                 alert("error");
               }
